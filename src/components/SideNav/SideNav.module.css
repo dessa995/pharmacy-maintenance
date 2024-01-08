@@ -1,0 +1,49 @@
+.optionsList {
+  @apply flex flex-col gap-5 py-10 fixed w-[18%] min-h-[95vh] items-center justify-center rounded-xl border-2 border-cyan-400;
+}
+
+.listItem {
+  @apply text-gray-500 transition-all duration-300 text-2xl;
+}
+
+.listItem:hover {
+  @apply cursor-pointer text-cyan-800;
+}
+
+.listItemActive {
+  @apply border-b-2 border-cyan-400 text-cyan-500 font-bold transition-all duration-300 text-2xl;
+}
+
+.listItemActive:hover {
+  @apply cursor-pointer text-cyan-800 border-cyan-600;
+}
+
+/*-------------------------------------------------------------------------
+---------------------------RESPONSIVE--------------------------------------
+---------------------------------------------------------------------------*/
+
+@media screen and (max-width: 1025px) {
+  .optionsList {
+    @apply min-h-0 w-[60%] mx-auto left-[20%] flex-row bg-white z-10 shadow-[0_-50px_45px_-10px_rgb(255,255,255)];
+  }
+}
+
+@media screen and (max-width: 805px) {
+  .listItem {
+    @apply text-lg;
+  }
+
+  .listItemActive {
+    @apply text-lg;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .listItem {
+    @apply text-sm;
+  }
+
+  .listItemActive {
+    @apply text-sm;
+  }
+}

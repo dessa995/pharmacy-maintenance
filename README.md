@@ -1,4 +1,4 @@
-# Bushido-internship
+# Pharmacy-Maintenance
 
 Uppon downloading the application, open terminal and type "npm install" command.
 
